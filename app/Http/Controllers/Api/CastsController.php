@@ -10,9 +10,9 @@ use App\Models\Casts;
 class CastsController extends Controller
 {
 
-    public function __construct(){
-        $this->middleware(['auth:api', 'checkrole'])->except('index','show');
-    }
+    // public function __construct(){
+    //     $this->middleware(['auth:api', 'checkrole'])->except('index','show');
+    // }
 
     public function index(){
         $cast = Casts::get();
